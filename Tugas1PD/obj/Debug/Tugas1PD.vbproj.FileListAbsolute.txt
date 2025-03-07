@@ -1,0 +1,10 @@
+C:\Users\LOQ\Documents\Kuliah\Tugas1PD\Tugas1PD\bin\Debug\Tugas1PD.exe.config
+C:\Users\LOQ\Documents\Kuliah\Tugas1PD\Tugas1PD\bin\Debug\Tugas1PD.exe
+C:\Users\LOQ\Documents\Kuliah\Tugas1PD\Tugas1PD\bin\Debug\Tugas1PD.pdb
+C:\Users\LOQ\Documents\Kuliah\Tugas1PD\Tugas1PD\bin\Debug\Tugas1PD.xml
+C:\Users\LOQ\Documents\Kuliah\Tugas1PD\Tugas1PD\obj\Debug\Tugas1PD.Form1.resources
+C:\Users\LOQ\Documents\Kuliah\Tugas1PD\Tugas1PD\obj\Debug\Tugas1PD.Resources.resources
+C:\Users\LOQ\Documents\Kuliah\Tugas1PD\Tugas1PD\obj\Debug\Tugas1PD.vbproj.GenerateResource.Cache
+C:\Users\LOQ\Documents\Kuliah\Tugas1PD\Tugas1PD\obj\Debug\Tugas1PD.exe
+C:\Users\LOQ\Documents\Kuliah\Tugas1PD\Tugas1PD\obj\Debug\Tugas1PD.xml
+C:\Users\LOQ\Documents\Kuliah\Tugas1PD\Tugas1PD\obj\Debug\Tugas1PD.pdb
