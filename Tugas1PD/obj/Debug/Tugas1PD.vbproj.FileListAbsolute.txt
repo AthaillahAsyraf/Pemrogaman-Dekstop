@@ -8,3 +8,4 @@ C:\Users\LOQ\Documents\Kuliah\Tugas1PD\Tugas1PD\obj\Debug\Tugas1PD.vbproj.Genera
 C:\Users\LOQ\Documents\Kuliah\Tugas1PD\Tugas1PD\obj\Debug\Tugas1PD.exe
 C:\Users\LOQ\Documents\Kuliah\Tugas1PD\Tugas1PD\obj\Debug\Tugas1PD.xml
 C:\Users\LOQ\Documents\Kuliah\Tugas1PD\Tugas1PD\obj\Debug\Tugas1PD.pdb
+C:\Users\LOQ\Documents\Kuliah\Tugas1PD\Tugas1PD\obj\Debug\Tugas1PD.vbprojResolveAssemblyReference.cache

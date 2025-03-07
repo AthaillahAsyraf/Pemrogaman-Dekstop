@@ -31,6 +31,9 @@ Partial Class Form1
         Me.cmbFakultas = New System.Windows.Forms.ComboBox()
         Me.cmbJurusan = New System.Windows.Forms.ComboBox()
         Me.btnProcess = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'Label1
@@ -54,7 +57,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(38, 136)
+        Me.Label3.Location = New System.Drawing.Point(38, 183)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(59, 17)
         Me.Label3.TabIndex = 2
@@ -63,7 +66,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(38, 104)
+        Me.Label4.Location = New System.Drawing.Point(38, 150)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(61, 17)
         Me.Label4.TabIndex = 3
@@ -87,7 +90,7 @@ Partial Class Form1
         '
         Me.cmbFakultas.FormattingEnabled = True
         Me.cmbFakultas.Items.AddRange(New Object() {"FKIP", "FMIPA", "FEB"})
-        Me.cmbFakultas.Location = New System.Drawing.Point(145, 104)
+        Me.cmbFakultas.Location = New System.Drawing.Point(145, 150)
         Me.cmbFakultas.Name = "cmbFakultas"
         Me.cmbFakultas.Size = New System.Drawing.Size(408, 24)
         Me.cmbFakultas.TabIndex = 6
@@ -96,25 +99,59 @@ Partial Class Form1
         '
         Me.cmbJurusan.FormattingEnabled = True
         Me.cmbJurusan.Items.AddRange(New Object() {"Matematika", "Kimia", "Biologi", "Fisika", "Ilmu Komputer"})
-        Me.cmbJurusan.Location = New System.Drawing.Point(145, 134)
+        Me.cmbJurusan.Location = New System.Drawing.Point(145, 180)
         Me.cmbJurusan.Name = "cmbJurusan"
         Me.cmbJurusan.Size = New System.Drawing.Size(408, 24)
         Me.cmbJurusan.TabIndex = 7
         '
         'btnProcess
         '
-        Me.btnProcess.Location = New System.Drawing.Point(41, 182)
+        Me.btnProcess.Location = New System.Drawing.Point(41, 212)
         Me.btnProcess.Name = "btnProcess"
         Me.btnProcess.Size = New System.Drawing.Size(75, 23)
         Me.btnProcess.TabIndex = 8
         Me.btnProcess.Text = "Process"
         Me.btnProcess.UseVisualStyleBackColor = True
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(38, 114)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(95, 17)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Text = "Jenis Kelamin"
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(158, 114)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(86, 21)
+        Me.RadioButton1.TabIndex = 10
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Laki-Laki"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(269, 114)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(102, 21)
+        Me.RadioButton2.TabIndex = 11
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Perempuan"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(603, 522)
+        Me.Controls.Add(Me.RadioButton2)
+        Me.Controls.Add(Me.RadioButton1)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnProcess)
         Me.Controls.Add(Me.cmbJurusan)
         Me.Controls.Add(Me.cmbFakultas)
@@ -139,5 +176,8 @@ Partial Class Form1
     Friend WithEvents cmbFakultas As System.Windows.Forms.ComboBox
     Friend WithEvents cmbJurusan As System.Windows.Forms.ComboBox
     Friend WithEvents btnProcess As System.Windows.Forms.Button
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
 
 End Class
