@@ -26,14 +26,35 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtNama = New System.Windows.Forms.MaskedTextBox()
-        Me.txtNIP = New System.Windows.Forms.TextBox()
-        Me.cmbFakultas = New System.Windows.Forms.ComboBox()
-        Me.cmbJurusan = New System.Windows.Forms.ComboBox()
-        Me.btnProcess = New System.Windows.Forms.Button()
+        Me.txtnama = New System.Windows.Forms.MaskedTextBox()
+        Me.txtnip = New System.Windows.Forms.TextBox()
+        Me.cbjurusan = New System.Windows.Forms.ComboBox()
+        Me.cbmatkul = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.rbL = New System.Windows.Forms.RadioButton()
+        Me.rbP = New System.Windows.Forms.RadioButton()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblgrade = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtuas = New System.Windows.Forms.TextBox()
+        Me.txtuts = New System.Windows.Forms.TextBox()
+        Me.txttugas = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.dgvdata = New System.Windows.Forms.DataGridView()
+        Me.dgnip = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgnama = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgjeniskelamin = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgjurusan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgmatkul = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dggrade = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnsave = New System.Windows.Forms.Button()
+        Me.btndelete = New System.Windows.Forms.Button()
+        Me.btnnew = New System.Windows.Forms.Button()
+        Me.btnclose = New System.Windows.Forms.Button()
+        Me.Panel1.SuspendLayout()
+        CType(Me.dgvdata, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -72,46 +93,37 @@ Partial Class Form1
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Fakultas"
         '
-        'txtNama
+        'txtnama
         '
-        Me.txtNama.Location = New System.Drawing.Point(145, 71)
-        Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(408, 22)
-        Me.txtNama.TabIndex = 4
+        Me.txtnama.Location = New System.Drawing.Point(145, 71)
+        Me.txtnama.Name = "txtnama"
+        Me.txtnama.Size = New System.Drawing.Size(516, 22)
+        Me.txtnama.TabIndex = 4
         '
-        'txtNIP
+        'txtnip
         '
-        Me.txtNIP.Location = New System.Drawing.Point(145, 41)
-        Me.txtNIP.Name = "txtNIP"
-        Me.txtNIP.Size = New System.Drawing.Size(408, 22)
-        Me.txtNIP.TabIndex = 5
+        Me.txtnip.Location = New System.Drawing.Point(145, 41)
+        Me.txtnip.Name = "txtnip"
+        Me.txtnip.Size = New System.Drawing.Size(516, 22)
+        Me.txtnip.TabIndex = 5
         '
-        'cmbFakultas
+        'cbjurusan
         '
-        Me.cmbFakultas.FormattingEnabled = True
-        Me.cmbFakultas.Items.AddRange(New Object() {"FKIP", "FMIPA", "FEB"})
-        Me.cmbFakultas.Location = New System.Drawing.Point(145, 150)
-        Me.cmbFakultas.Name = "cmbFakultas"
-        Me.cmbFakultas.Size = New System.Drawing.Size(408, 24)
-        Me.cmbFakultas.TabIndex = 6
+        Me.cbjurusan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbjurusan.FormattingEnabled = True
+        Me.cbjurusan.Location = New System.Drawing.Point(117, 116)
+        Me.cbjurusan.Name = "cbjurusan"
+        Me.cbjurusan.Size = New System.Drawing.Size(516, 24)
+        Me.cbjurusan.TabIndex = 6
         '
-        'cmbJurusan
+        'cbmatkul
         '
-        Me.cmbJurusan.FormattingEnabled = True
-        Me.cmbJurusan.Items.AddRange(New Object() {"Matematika", "Kimia", "Biologi", "Fisika", "Ilmu Komputer"})
-        Me.cmbJurusan.Location = New System.Drawing.Point(145, 180)
-        Me.cmbJurusan.Name = "cmbJurusan"
-        Me.cmbJurusan.Size = New System.Drawing.Size(408, 24)
-        Me.cmbJurusan.TabIndex = 7
-        '
-        'btnProcess
-        '
-        Me.btnProcess.Location = New System.Drawing.Point(41, 212)
-        Me.btnProcess.Name = "btnProcess"
-        Me.btnProcess.Size = New System.Drawing.Size(75, 23)
-        Me.btnProcess.TabIndex = 8
-        Me.btnProcess.Text = "Process"
-        Me.btnProcess.UseVisualStyleBackColor = True
+        Me.cbmatkul.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbmatkul.FormattingEnabled = True
+        Me.cbmatkul.Location = New System.Drawing.Point(117, 149)
+        Me.cbmatkul.Name = "cbmatkul"
+        Me.cbmatkul.Size = New System.Drawing.Size(516, 24)
+        Me.cbmatkul.TabIndex = 7
         '
         'Label5
         '
@@ -122,47 +134,222 @@ Partial Class Form1
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Jenis Kelamin"
         '
-        'RadioButton1
+        'rbL
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(158, 114)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(86, 21)
-        Me.RadioButton1.TabIndex = 10
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Laki-Laki"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.rbL.AutoSize = True
+        Me.rbL.Location = New System.Drawing.Point(158, 114)
+        Me.rbL.Name = "rbL"
+        Me.rbL.Size = New System.Drawing.Size(86, 21)
+        Me.rbL.TabIndex = 10
+        Me.rbL.TabStop = True
+        Me.rbL.Text = "Laki-Laki"
+        Me.rbL.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'rbP
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(269, 114)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(102, 21)
-        Me.RadioButton2.TabIndex = 11
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Perempuan"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rbP.AutoSize = True
+        Me.rbP.Location = New System.Drawing.Point(269, 114)
+        Me.rbP.Name = "rbP"
+        Me.rbP.Size = New System.Drawing.Size(102, 21)
+        Me.rbP.TabIndex = 11
+        Me.rbP.TabStop = True
+        Me.rbP.Text = "Perempuan"
+        Me.rbP.UseVisualStyleBackColor = True
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.lblgrade)
+        Me.Panel1.Controls.Add(Me.Label9)
+        Me.Panel1.Controls.Add(Me.Label8)
+        Me.Panel1.Controls.Add(Me.Label7)
+        Me.Panel1.Controls.Add(Me.txtuas)
+        Me.Panel1.Controls.Add(Me.txtuts)
+        Me.Panel1.Controls.Add(Me.txttugas)
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Controls.Add(Me.cbjurusan)
+        Me.Panel1.Controls.Add(Me.cbmatkul)
+        Me.Panel1.Location = New System.Drawing.Point(28, 31)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(771, 229)
+        Me.Panel1.TabIndex = 12
+        '
+        'lblgrade
+        '
+        Me.lblgrade.AutoSize = True
+        Me.lblgrade.Location = New System.Drawing.Point(656, 189)
+        Me.lblgrade.Name = "lblgrade"
+        Me.lblgrade.Size = New System.Drawing.Size(67, 17)
+        Me.lblgrade.TabIndex = 19
+        Me.lblgrade.Text = "-GRADE-"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(501, 189)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(33, 17)
+        Me.Label9.TabIndex = 18
+        Me.Label9.Text = "Uas"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(322, 189)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(29, 17)
+        Me.Label8.TabIndex = 17
+        Me.Label8.Text = "Uts"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(133, 189)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(48, 17)
+        Me.Label7.TabIndex = 16
+        Me.Label7.Text = "Tugas"
+        '
+        'txtuas
+        '
+        Me.txtuas.Location = New System.Drawing.Point(536, 184)
+        Me.txtuas.Name = "txtuas"
+        Me.txtuas.Size = New System.Drawing.Size(97, 22)
+        Me.txtuas.TabIndex = 15
+        '
+        'txtuts
+        '
+        Me.txtuts.Location = New System.Drawing.Point(357, 186)
+        Me.txtuts.Name = "txtuts"
+        Me.txtuts.Size = New System.Drawing.Size(97, 22)
+        Me.txtuts.TabIndex = 14
+        '
+        'txttugas
+        '
+        Me.txttugas.Location = New System.Drawing.Point(187, 186)
+        Me.txttugas.Name = "txttugas"
+        Me.txttugas.Size = New System.Drawing.Size(97, 22)
+        Me.txttugas.TabIndex = 13
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(12, 189)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(59, 17)
+        Me.Label6.TabIndex = 13
+        Me.Label6.Text = "Jurusan"
+        '
+        'dgvdata
+        '
+        Me.dgvdata.AllowUserToAddRows = False
+        Me.dgvdata.AllowUserToDeleteRows = False
+        Me.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvdata.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgnip, Me.dgnama, Me.dgjeniskelamin, Me.dgjurusan, Me.dgmatkul, Me.dggrade})
+        Me.dgvdata.Location = New System.Drawing.Point(28, 325)
+        Me.dgvdata.Name = "dgvdata"
+        Me.dgvdata.ReadOnly = True
+        Me.dgvdata.RowTemplate.Height = 24
+        Me.dgvdata.Size = New System.Drawing.Size(642, 185)
+        Me.dgvdata.TabIndex = 13
+        '
+        'dgnip
+        '
+        Me.dgnip.HeaderText = "Nip"
+        Me.dgnip.Name = "dgnip"
+        Me.dgnip.ReadOnly = True
+        '
+        'dgnama
+        '
+        Me.dgnama.HeaderText = "Nama"
+        Me.dgnama.Name = "dgnama"
+        Me.dgnama.ReadOnly = True
+        '
+        'dgjeniskelamin
+        '
+        Me.dgjeniskelamin.HeaderText = "Jenis Kelamin"
+        Me.dgjeniskelamin.Name = "dgjeniskelamin"
+        Me.dgjeniskelamin.ReadOnly = True
+        '
+        'dgjurusan
+        '
+        Me.dgjurusan.HeaderText = "Jurusan"
+        Me.dgjurusan.Name = "dgjurusan"
+        Me.dgjurusan.ReadOnly = True
+        '
+        'dgmatkul
+        '
+        Me.dgmatkul.HeaderText = "Mata Kuliah"
+        Me.dgmatkul.Name = "dgmatkul"
+        Me.dgmatkul.ReadOnly = True
+        '
+        'dggrade
+        '
+        Me.dggrade.HeaderText = "GRADE"
+        Me.dggrade.Name = "dggrade"
+        Me.dggrade.ReadOnly = True
+        '
+        'btnsave
+        '
+        Me.btnsave.Location = New System.Drawing.Point(28, 278)
+        Me.btnsave.Name = "btnsave"
+        Me.btnsave.Size = New System.Drawing.Size(75, 23)
+        Me.btnsave.TabIndex = 14
+        Me.btnsave.Text = "Save"
+        Me.btnsave.UseVisualStyleBackColor = True
+        '
+        'btndelete
+        '
+        Me.btndelete.Location = New System.Drawing.Point(215, 278)
+        Me.btndelete.Name = "btndelete"
+        Me.btndelete.Size = New System.Drawing.Size(75, 23)
+        Me.btndelete.TabIndex = 15
+        Me.btndelete.Text = "Delete"
+        Me.btndelete.UseVisualStyleBackColor = True
+        '
+        'btnnew
+        '
+        Me.btnnew.Location = New System.Drawing.Point(120, 278)
+        Me.btnnew.Name = "btnnew"
+        Me.btnnew.Size = New System.Drawing.Size(75, 23)
+        Me.btnnew.TabIndex = 16
+        Me.btnnew.Text = "New"
+        Me.btnnew.UseVisualStyleBackColor = True
+        '
+        'btnclose
+        '
+        Me.btnclose.BackColor = System.Drawing.Color.Red
+        Me.btnclose.Location = New System.Drawing.Point(304, 278)
+        Me.btnclose.Name = "btnclose"
+        Me.btnclose.Size = New System.Drawing.Size(75, 23)
+        Me.btnclose.TabIndex = 17
+        Me.btnclose.Text = "Close"
+        Me.btnclose.UseVisualStyleBackColor = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(603, 522)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
+        Me.ClientSize = New System.Drawing.Size(811, 522)
+        Me.Controls.Add(Me.btnclose)
+        Me.Controls.Add(Me.btnnew)
+        Me.Controls.Add(Me.btndelete)
+        Me.Controls.Add(Me.btnsave)
+        Me.Controls.Add(Me.dgvdata)
+        Me.Controls.Add(Me.rbP)
+        Me.Controls.Add(Me.rbL)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.btnProcess)
-        Me.Controls.Add(Me.cmbJurusan)
-        Me.Controls.Add(Me.cmbFakultas)
-        Me.Controls.Add(Me.txtNIP)
-        Me.Controls.Add(Me.txtNama)
+        Me.Controls.Add(Me.txtnip)
+        Me.Controls.Add(Me.txtnama)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Panel1)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.dgvdata, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -171,13 +358,32 @@ Partial Class Form1
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents txtNama As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents txtNIP As System.Windows.Forms.TextBox
-    Friend WithEvents cmbFakultas As System.Windows.Forms.ComboBox
-    Friend WithEvents cmbJurusan As System.Windows.Forms.ComboBox
-    Friend WithEvents btnProcess As System.Windows.Forms.Button
+    Friend WithEvents txtnama As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents txtnip As System.Windows.Forms.TextBox
+    Friend WithEvents cbjurusan As System.Windows.Forms.ComboBox
+    Friend WithEvents cbmatkul As System.Windows.Forms.ComboBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
+    Friend WithEvents rbL As System.Windows.Forms.RadioButton
+    Friend WithEvents rbP As System.Windows.Forms.RadioButton
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents txtuas As System.Windows.Forms.TextBox
+    Friend WithEvents txtuts As System.Windows.Forms.TextBox
+    Friend WithEvents txttugas As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents dgvdata As System.Windows.Forms.DataGridView
+    Friend WithEvents btnsave As System.Windows.Forms.Button
+    Friend WithEvents btndelete As System.Windows.Forms.Button
+    Friend WithEvents btnnew As System.Windows.Forms.Button
+    Friend WithEvents btnclose As System.Windows.Forms.Button
+    Friend WithEvents lblgrade As System.Windows.Forms.Label
+    Friend WithEvents dgnip As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents dgnama As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents dgjeniskelamin As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents dgjurusan As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents dgmatkul As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents dggrade As System.Windows.Forms.DataGridViewTextBoxColumn
 
 End Class
